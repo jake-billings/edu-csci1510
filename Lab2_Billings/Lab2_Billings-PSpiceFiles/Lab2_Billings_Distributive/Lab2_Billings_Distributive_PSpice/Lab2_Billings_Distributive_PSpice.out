@@ -1,0 +1,160 @@
+
+**** 09/18/17 12:19:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Lab2_Billings_Distributive-Lab2_Billings_Distributive_PSpice"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Lab2_Billings_Distributive_PSpice.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../lab2_billings_stimulusinput.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Lab2_Billings_Distributive.net" 
+
+
+
+**** INCLUDING Lab2_Billings_Distributive.net ****
+* source LAB2_BILLINGS
+.EXTERNAL OUTPUT Distributive_Right
+.EXTERNAL OUTPUT Distributive_Left
+U_y         STIM(1,0) $G_DPWR $G_DGND N03061 IO_STM STIMULUS=y
+U_z         STIM(1,0) $G_DPWR $G_DGND N03153 IO_STM STIMULUS=z
+U_x         STIM(1,0) $G_DPWR $G_DGND N03325 IO_STM STIMULUS=x
+X_U1A         N03325 N03061 N03887 $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1B         N03325 N03153 N03894 $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1C         N03325 N03108 DISTRIBUTIVE_LEFT $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         N03061 N03153 N03108 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2B         N03887 N03894 DISTRIBUTIVE_RIGHT $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING Lab2_Billings_Distributive_PSpice.cir ****
+.END
+
+* C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_Billings_StimulusInput.stl written on Mon Sep 18 11:23:47 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! x Digital y Digital z Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 4ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS z STIM (1, 1) ;! CLOCK 4000 0.5 0 0
++   +0s 0
++   +125us 1
++   Repeat Forever
++      +125us 0
++      +125us 1
++   EndRepeat
+.STIMULUS y STIM (1, 1) ;! CLOCK 2000 0.5 0 0
++   +0s 0
++   +250us 1
++   Repeat Forever
++      +250us 0
++      +250us 1
++   EndRepeat
+.STIMULUS x STIM (1, 1) ;! CLOCK 1000 0.5 0 0
++   +0s 0
++   +500us 1
++   Repeat Forever
++      +500us 0
++      +500us 1
++   EndRepeat
+
+**** 09/18/17 12:19:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Lab2_Billings_Distributive-Lab2_Billings_Distributive_PSpice"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_32            D_08            
+      TPLHMN    4.000000E-09    7.000000E-09 
+      TPLHTY   10.000000E-09   17.500000E-09 
+      TPLHMX   15.000000E-09   27.000000E-09 
+      TPHLMN    5.600000E-09    4.800000E-09 
+      TPHLTY   14.000000E-09   12.000000E-09 
+      TPHLMX   22.000000E-09   19.000000E-09 
+
+
+**** 09/18/17 12:19:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Lab2_Billings_Distributive-Lab2_Billings_Distributive_PSpice"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.511000E-09 
+      TSWHL2                    1.487000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.517000E-09 
+      TSWLH2                    3.564000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 09/18/17 12:19:34 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Lab2_Billings_Distributive-Lab2_Billings_Distributive_PSpice"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .11
+

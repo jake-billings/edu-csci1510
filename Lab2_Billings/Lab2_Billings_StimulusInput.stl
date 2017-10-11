@@ -1,0 +1,32 @@
+* C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_Billings_StimulusInput.stl written on Mon Sep 18 11:23:47 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! x Digital y Digital z Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 4ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS z STIM (1, 1) ;! CLOCK 4000 0.5 0 0
++   +0s 0
++   +125us 1
++   Repeat Forever
++      +125us 0
++      +125us 1
++   EndRepeat
+.STIMULUS y STIM (1, 1) ;! CLOCK 2000 0.5 0 0
++   +0s 0
++   +250us 1
++   Repeat Forever
++      +250us 0
++      +250us 1
++   EndRepeat
+.STIMULUS x STIM (1, 1) ;! CLOCK 1000 0.5 0 0
++   +0s 0
++   +500us 1
++   Repeat Forever
++      +500us 0
++      +500us 1
++   EndRepeat

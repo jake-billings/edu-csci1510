@@ -1,0 +1,187 @@
+
+**** 09/18/17 11:59:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Lab2_Billings_DeMorgan-Lab2_Billings_DeMorgan_PSpice"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_Billings
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Lab2_Billings_DeMorgan_PSpice.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../lab2_billings_stimulusinput.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Lab2_Billings_DeMorgan.net" 
+
+
+
+**** INCLUDING Lab2_Billings_DeMorgan.net ****
+* source LAB2_BILLINGS
+.EXTERNAL OUTPUT DeMorgan_A_Left
+.EXTERNAL OUTPUT DeMorgan_A_Right
+.EXTERNAL OUTPUT DeMorgan_B_Left
+.EXTERNAL OUTPUT DeMorgan_B_Right
+X_U1A         N00246 N00253 N00267 $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1B         N00267 N00260 DEMORGAN_A_RIGHT $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         N00752 N00759 N01758 $G_DPWR $G_DGND 7402 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3B         N01758 N00771 N01748 $G_DPWR $G_DGND 7402 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N00752 IO_STM STIMULUS=x
+U_DSTM2         STIM(1,0) $G_DPWR $G_DGND N00759 IO_STM STIMULUS=y
+U_DSTM3         STIM(1,0) $G_DPWR $G_DGND N00771 IO_STM STIMULUS=z
+X_U5A         N00752 N00246 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5B         N00759 N00253 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5C         N00771 N00260 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5D         N01748 DEMORGAN_A_LEFT $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_z         STIM(1,0) $G_DPWR $G_DGND N02261 IO_STM STIMULUS=z
+U_x         STIM(1,0) $G_DPWR $G_DGND N02217 IO_STM STIMULUS=x
+U_y         STIM(1,0) $G_DPWR $G_DGND N02239 IO_STM STIMULUS=y
+X_U5E         N02217 N02563 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5F         N02239 N02570 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U6A         N02261 N02577 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U7B         N02563 N02570 N02584 $G_DPWR $G_DGND 7402 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U8B         N02584 N02577 DEMORGAN_B_LEFT $G_DPWR $G_DGND 7402 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U9A         N02217 N02239 N03149 $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U9B         N03149 N02261 N03156 $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U10A         N03156 DEMORGAN_B_RIGHT $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING Lab2_Billings_DeMorgan_PSpice.cir ****
+.END
+
+* C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_Billings_StimulusInput.stl written on Mon Sep 18 11:23:47 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! x Digital y Digital z Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 4ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS z STIM (1, 1) ;! CLOCK 4000 0.5 0 0
++   +0s 0
++   +125us 1
++   Repeat Forever
++      +125us 0
++      +125us 1
++   EndRepeat
+.STIMULUS y STIM (1, 1) ;! CLOCK 2000 0.5 0 0
++   +0s 0
++   +250us 1
++   Repeat Forever
++      +250us 0
++      +250us 1
++   EndRepeat
+.STIMULUS x STIM (1, 1) ;! CLOCK 1000 0.5 0 0
++   +0s 0
++   +500us 1
++   Repeat Forever
++      +500us 0
++      +500us 1
++   EndRepeat
+
+**** 09/18/17 11:59:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Lab2_Billings_DeMorgan-Lab2_Billings_DeMorgan_PSpice"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_Billings
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_00            D_02            D_04            
+      TPLHMN    4.400000E-09    4.800000E-09    4.800000E-09 
+      TPLHTY   11.000000E-09   12.000000E-09   12.000000E-09 
+      TPLHMX   22.000000E-09   22.000000E-09   22.000000E-09 
+      TPHLMN    2.800000E-09    3.200000E-09    3.200000E-09 
+      TPHLTY    7.000000E-09    8.000000E-09    8.000000E-09 
+      TPHLMX   15.000000E-09   15.000000E-09   15.000000E-09 
+
+
+**** 09/18/17 11:59:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Lab2_Billings_DeMorgan-Lab2_Billings_DeMorgan_PSpice"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_Billings
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.511000E-09 
+      TSWHL2                    1.487000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.517000E-09 
+      TSWLH2                    3.564000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 09/18/17 11:59:23 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Lab2_Billings_DeMorgan-Lab2_Billings_DeMorgan_PSpice"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_Billings
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .09
+

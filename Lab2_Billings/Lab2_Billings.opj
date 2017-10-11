@@ -1,0 +1,100 @@
+(ExpressProject "Lab2_Billings"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\lab2_billings.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File
+       ".\lab2_billings-pspicefiles\lab2_billings_demorgan\lab2_billings_demorgan.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\lab2_billings-pspicefiles\lab2_billings_demorgan\lab2_billings_demorgan_pspice.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab2_billings-pspicefiles\lab2_billings_demorgan\lab2_billings_demorgan_pspice.sim"
+        (DisplayName "Lab2_Billings_DeMorgan-Lab2_Billings_DeMorgan_PSpice")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries")
+    (Folder "Include Files")
+    (Folder "Stimulus Files"
+      (File ".\lab2_billings_stimulusinput.stl"
+        (DisplayName ".\lab2_billings_stimulusinput.stl")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "student")
+  (PartMRUSelector
+    (7404
+      (FullPartName "7404.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (DigStim1
+      (FullPartName "DigStim1.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (7406
+      (FullPartName "7406.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (7402
+      (FullPartName "7402.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "1"))
+    (7400
+      (FullPartName "7400.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "1")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\lab2_billings.dsn")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\lab2_billings.dsn"
+         "Lab2_Billings_DeMorgan")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\lab2_billings.dsn"
+         "Lab2_Billings_Distributive")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\lab2_billings.dsn"
+         "Lab2_Billings_Distributive"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1018 52 511")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB2_BILLINGS\LAB2_BILLINGS.DSN")
+      (Schematic "Lab2_Billings_DeMorgan")
+      (Page "Lab2_Billings_DeMorgan_A"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1096 130 589")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB2_BILLINGS\LAB2_BILLINGS.DSN")
+      (Schematic "Lab2_Billings_DeMorgan")
+      (Page "Lab2_Billings_DeMorgan_B"))))

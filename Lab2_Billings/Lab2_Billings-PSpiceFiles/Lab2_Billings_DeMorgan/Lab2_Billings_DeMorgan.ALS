@@ -1,0 +1,50 @@
+.ALIASES
+U_DSTM1          DSTM1(VCC=$G_DPWR GND=$G_DGND OUT=N00752 ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS636@SOURCSTM.DigStim1.Normal(chips)
+U_DSTM2          DSTM2(VCC=$G_DPWR GND=$G_DGND OUT=N00759 ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS658@SOURCSTM.DigStim1.Normal(chips)
+U_DSTM3          DSTM3(VCC=$G_DPWR GND=$G_DGND OUT=N00771 ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS680@SOURCSTM.DigStim1.Normal(chips)
+X_U5A           U5A(A=N00752 Y=N00246 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS980@EVAL.7404.Normal(chips)
+X_U5B           U5B(A=N00759 Y=N00253 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS1023@EVAL.7404.Normal(chips)
+X_U5C           U5C(A=N00771 Y=N00260 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS1067@EVAL.7404.Normal(chips)
+X_U5D           U5D(A=N01748 Y=DEMORGAN_A_LEFT VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS1998@EVAL.7404.Normal(chips)
+U_z             z(VCC=$G_DPWR GND=$G_DGND OUT=N02261 ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS2241@SOURCSTM.DigStim1.Normal(chips)
+U_x             x(VCC=$G_DPWR GND=$G_DGND OUT=N02217 ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS2197@SOURCSTM.DigStim1.Normal(chips)
+U_y             y(VCC=$G_DPWR GND=$G_DGND OUT=N02239 ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS2219@SOURCSTM.DigStim1.Normal(chips)
+X_U5E           U5E(A=N02217 Y=N02563 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS2316@EVAL.7404.Normal(chips)
+X_U5F           U5F(A=N02239 Y=N02570 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS2353@EVAL.7404.Normal(chips)
+X_U6A           U6A(A=N02261 Y=N02577 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS2390@EVAL.7404.Normal(chips)
+X_U10A          U10A(A=N03156 Y=DEMORGAN_B_RIGHT VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS3074@EVAL.7404.Normal(chips)
+X_U12B          U12B(A=N00267 B=N00260 Y=DEMORGAN_A_RIGHT VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS4628@EVAL.7408.Normal(chips)
+X_U2B           U2B(A=N00246 B=N00253 Y=N00267 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS4578@EVAL.7408.Normal(chips)
+X_U11C          U11C(A=N00752 B=N00759 Y=N01758 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS4465@EVAL.7432.Normal(chips)
+X_U1C           U1C(A=N01758 B=N00771 Y=N01748 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS4398@EVAL.7432.Normal(chips)
+X_U15B          U15B(A=N03149 B=N02261 Y=N03156 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS4846@EVAL.7408.Normal(chips)
+X_U16B          U16B(A=N02217 B=N02239 Y=N03149 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS4902@EVAL.7408.Normal(chips)
+X_U14C          U14C(A=N02563 B=N02570 Y=N02584 VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS4755@EVAL.7432.Normal(chips)
+X_U13C          U13C(A=N02584 B=N02577 Y=DEMORGAN_B_LEFT VCC=$G_DPWR GND=$G_DGND ) CN
++@LAB2_BILLINGS.Lab2_Billings_DeMorgan(sch_1):INS4705@EVAL.7432.Normal(chips)
+_    _(DeMorgan_A_Left=DEMORGAN_A_LEFT)
+_    _(DeMorgan_A_Right=DEMORGAN_A_RIGHT)
+_    _(DeMorgan_B_Left=DEMORGAN_B_LEFT)
+_    _(DeMorgan_B_Right=DEMORGAN_B_RIGHT)
+.ENDALIASES

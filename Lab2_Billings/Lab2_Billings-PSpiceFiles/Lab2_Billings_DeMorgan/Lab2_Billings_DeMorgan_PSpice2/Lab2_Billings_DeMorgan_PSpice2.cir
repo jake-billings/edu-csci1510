@@ -1,0 +1,20 @@
+** Profile: "Lab2_Billings_DeMorgan-Lab2_Billings_DeMorgan_PSpice2"  [ C:\Users\student\Desktop\CSCI Labs\Lab2_Billings\Lab2_Billings-PSpiceFiles\Lab2_Billings_DeMorgan\Lab2_Billings_DeMorgan_PSpice2.sim ] 
+
+** Creating circuit file "Lab2_Billings_DeMorgan_PSpice2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../lab2_billings_stimulusinput.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Lab2_Billings_DeMorgan.net" 
+
+
+.END

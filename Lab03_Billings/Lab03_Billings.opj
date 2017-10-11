@@ -1,0 +1,63 @@
+(ExpressProject "Lab03_Billings"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\lab03_billings.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\lab03_billings-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\lab03_billings-pspicefiles\schematic1\lab03_simulation.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab03_billings-pspicefiles\schematic1\lab03_simulation.sim"
+        (DisplayName "SCHEMATIC1-Lab03_Simulation")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "student")
+  (PartMRUSelector
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab03_Billings\lab03_billings.dsn")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab03_Billings\lab03_billings.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab03_Billings\lab03_billings.dsn"
+         "SCHEMATIC1" "Lab03_Part1_Schematic_Billings"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 319"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1788 104 462")
+        (Scroll "-333 332")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB03_BILLINGS\LAB03_BILLINGS.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "Lab03_Part1_Schematic_Billings"))))
