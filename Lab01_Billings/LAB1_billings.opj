@@ -1,0 +1,119 @@
+(ExpressProject "LAB1_billings"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\lab1_billings.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\lab1_billings-pspicefiles\gates_billings\gates_billings.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\lab1_billings-pspicefiles\gates_billings\andinput.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab1_billings-pspicefiles\gates_billings\andinput.sim"
+        (DisplayName "GATES_Billings-ANDinput")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries")
+    (Folder "Include Files")
+    (Folder "Stimulus Files"
+      (File ".\input.stl"
+        (DisplayName ".\input.stl")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (7400
+      (FullPartName "7400.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (7432
+      (FullPartName "7432.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (DigStim1
+      (FullPartName "DigStim1.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (7401
+      (FullPartName "7401.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (7404
+      (FullPartName "7404.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (7402
+      (FullPartName "7402.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (7408
+      (FullPartName "7408.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_17.2\tools\capture\library\pspice")
+  (MPSSessionName "student")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "c:\users\student\desktop\csci labs\lab1_billings\lab1_billings.dsn")
+      (Path "Design Resources"
+         "c:\users\student\desktop\csci labs\lab1_billings\lab1_billings.dsn"
+         "GATES_Billings")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Path "PSpice Resources" "Stimulus Files")
+      (Select "Design Resources"
+         "c:\users\student\desktop\csci labs\lab1_billings\lab1_billings.dsn"
+         "GATES_Billings"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 411"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 726 52 502")
+        (Scroll "0 75")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB1_BILLINGS\LAB1_BILLINGS.DSN")
+      (Schematic "GATES_Billings")
+      (Page "GATES_Billings"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 927 0 179")
+        (Scroll "0 75")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB1_BILLINGS\LAB1_BILLINGS.DSN")
+      (Schematic "GATES_Billings")
+      (Page "part2_Billings"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 484 104 554")
+        (Scroll "44 692")
+        (Zoom "400")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB1_BILLINGS\LAB1_BILLINGS.DSN")
+      (Schematic "GATES_Billings")
+      (Page "7400_Billings"))))
