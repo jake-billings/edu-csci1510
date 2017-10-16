@@ -1,0 +1,20 @@
+** Profile: "SCHEMATIC2-Lab03_Part2_Schematic_Billings"  [ C:\Users\student\Desktop\CSCI Labs\Lab03_Billings\Lab03_Billings-PSpiceFiles\SCHEMATIC2\Lab03_Part2_Schematic_Billings.sim ] 
+
+** Creating circuit file "Lab03_Part2_Schematic_Billings.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+.stmlib "C:\Users\student\Desktop\Lab03_Billings\Lab03_Stimulus_wxyz_500hz_base_Billings.stl" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+.END

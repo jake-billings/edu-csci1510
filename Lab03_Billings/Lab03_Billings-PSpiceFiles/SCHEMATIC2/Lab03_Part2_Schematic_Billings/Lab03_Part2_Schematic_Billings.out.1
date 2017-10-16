@@ -1,0 +1,48 @@
+
+**** 10/16/17 12:00:40 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC2-Lab03_Part2_Schematic_Billings"  [ C:\Users\student\Desktop\CSCI Labs\Lab03_Billings\Lab03_Billings-PSpiceFi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Lab03_Part2_Schematic_Billings.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+.stmlib "C:\Users\student\Desktop\CSCI Labs\Lab03_Billings_old\wxyz_base_500hz_billings.stl" 
+
+*Analysis directives: 
+---------------------------------------------------------------------------------------------$
+ERROR(ORPSIM-16358): Unable to open stimulus file C:\Users\student\Desktop\CSCI Labs\Lab03_Billings_old\wxyz_base_500hz_billings.stl.
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC2.net" 
+
+
+
+**** INCLUDING SCHEMATIC2.net ****
+* source LAB03_BILLINGS
+.EXTERNAL OUTPUT PORTLEFT-L
+X_U1B         N00289 N00296 PORTLEFT-L $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_y         STIM(1,0) $G_DPWR $G_DGND N00236 IO_STM STIMULUS=y
+U_z         STIM(1,0) $G_DPWR $G_DGND N00296 IO_STM STIMULUS=z
+X_U1A         N00229 N00236 N00289 $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_x         STIM(1,0) $G_DPWR $G_DGND N00229 IO_STM STIMULUS=x
+
+**** RESUMING Lab03_Part2_Schematic_Billings.cir ****
+.END
+
