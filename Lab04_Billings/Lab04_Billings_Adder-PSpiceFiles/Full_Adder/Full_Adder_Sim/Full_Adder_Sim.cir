@@ -1,0 +1,20 @@
+** Profile: "Full_Adder-Full_Adder_Sim"  [ C:\Users\student\Desktop\CSCI Labs\Lab04_Billings_Adder-PSpiceFiles\Full_Adder\Full_Adder_Sim.sim ] 
+
+** Creating circuit file "Full_Adder_Sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../lab04_stimulus_carryxy_1000hz_base_billings.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Full_Adder.net" 
+
+
+.END

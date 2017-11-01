@@ -1,0 +1,20 @@
+** Profile: "Two_bit_Adder-Two_Bit_Adder_Sim"  [ C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder-pspicefiles\two_bit_adder\two_bit_adder_sim.sim ] 
+
+** Creating circuit file "Two_Bit_Adder_Sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../2bitaddertest.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Two_bit_Adder.net" 
+
+
+.END

@@ -1,0 +1,143 @@
+(ExpressProject "Lab04_Billings_Adder"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\lab04_billings_adder.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "0")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\lab04_billings_adder-pspicefiles\full_adder\full_adder.net"
+      (Type "Report"))
+    (File ".\lab04_billings_adder-pspicefiles\two_bit_adder\two_bit_adder.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab04_billings_adder-pspicefiles\full_adder\full_adder_sim.sim"
+        (DisplayName "Full_Adder-Full_Adder_Sim")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\lab04_billings_adder-pspicefiles\two_bit_adder\two_bit_adder_sim.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab04_billings_adder-pspicefiles\two_bit_adder\two_bit_adder_sim.sim"
+        (DisplayName "Two_bit_Adder-Two_Bit_Adder_Sim")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User)
+      (File ".\2bitaddertest.stl"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\2bitaddertest.stl")))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (DigStim1
+      (FullPartName "DigStim1.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-R
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTBOTH-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (7432
+      (FullPartName "7432.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (Half_Adder
+      (FullPartName "Half_Adder.Normal")
+      (LibraryName
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB04_BILLINGS_ADDER.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (7408
+      (FullPartName "7408.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (7486
+      (FullPartName "7486.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "student")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder.dsn")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder.dsn"
+         "Two_bit_Adder")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder.dsn"
+         "Full_Adder")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder.dsn"
+         "Half_Adder")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder.dsn"
+         "Two_bit_Adder"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 310"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 484 104 554")
+        (Scroll "0 0")
+        (Zoom "100"))
+      (Path "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB04_BILLINGS_ADDER.DSN")
+      (Schematic "Full_Adder")
+      (Page "Full_Adder"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 510 130 580")
+        (Scroll "0 0")
+        (Zoom "100"))
+      (Path "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB04_BILLINGS_ADDER.DSN")
+      (Schematic "Half_Adder")
+      (Page "Half_Adder"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 826 104 453")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB04_BILLINGS_ADDER.DSN")
+      (Schematic "Two_bit_Adder")
+      (Page "Two_bit_Adder"))))

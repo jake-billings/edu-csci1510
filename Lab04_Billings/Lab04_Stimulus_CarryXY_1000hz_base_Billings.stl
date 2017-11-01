@@ -1,0 +1,32 @@
+* C:\Users\student\Desktop\CSCI Labs\Lab03_Stimulus_CarryXY_1000hz_base_Billings.stl written on Wed Nov 01 11:38:46 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! Carry_in Digital X Digital Y Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 4ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Y STIM (1, 1) ;! CLOCK 4000 0.5 0 0
++   +0s 0
++   +125us 1
++   Repeat Forever
++      +125us 0
++      +125us 1
++   EndRepeat
+.STIMULUS X STIM (1, 1) ;! CLOCK 2000 0.5 0 0
++   +0s 0
++   +250us 1
++   Repeat Forever
++      +250us 0
++      +250us 1
++   EndRepeat
+.STIMULUS Carry_in STIM (1, 1) ;! CLOCK 1000 0.5 0 0
++   +0s 0
++   +500us 1
++   Repeat Forever
++      +500us 0
++      +500us 1
++   EndRepeat

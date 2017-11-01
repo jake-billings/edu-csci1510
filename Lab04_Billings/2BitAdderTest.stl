@@ -1,0 +1,46 @@
+* C:\Users\Diane\Desktop\2BitAdderTest.stl written on Tue Oct 10 16:07:47 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! X0 Digital Y0 Digital Carry_in Digital X1 Digital Y1 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 16ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Y0 STIM (1, 1) ;! CLOCK 1k 0.5 0 0
++   +0s 0
++   +500us 1
++   Repeat Forever
++      +500us 0
++      +500us 1
++   EndRepeat
+.STIMULUS X0 STIM (1, 1) ;! CLOCK 4k 0.5 0 0
++   +0s 0
++   +125us 1
++   Repeat Forever
++      +125us 0
++      +125us 1
++   EndRepeat
+.STIMULUS Carry_in STIM (1, 1) ;! CLOCK 250 0.5 0 0
++   +0s 0
++   +2ms 1
++   Repeat Forever
++      +2ms 0
++      +2ms 1
++   EndRepeat
+.STIMULUS X1 STIM (1, 1) ;! CLOCK 2k 0.5 0 0
++   +0s 0
++   +250us 1
++   Repeat Forever
++      +250us 0
++      +250us 1
++   EndRepeat
+.STIMULUS Y1 STIM (1, 1) ;! CLOCK 500 0.5 0 0
++   +0s 0
++   +1ms 1
++   Repeat Forever
++      +1ms 0
++      +1ms 1
++   EndRepeat

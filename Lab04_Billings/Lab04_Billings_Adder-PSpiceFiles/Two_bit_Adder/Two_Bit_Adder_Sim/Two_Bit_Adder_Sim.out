@@ -1,0 +1,196 @@
+
+**** 11/01/17 12:08:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Two_bit_Adder-Two_Bit_Adder_Sim"  [ C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder-pspicefiles\two_bit_adder\t
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Two_Bit_Adder_Sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../2bitaddertest.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\Two_bit_Adder.net" 
+
+
+
+**** INCLUDING Two_bit_Adder.net ****
+* source LAB04_BILLINGS_ADDER
+.EXTERNAL OUTPUT SUM_X
+.EXTERNAL OUTPUT SUM_Y
+.EXTERNAL OUTPUT CARRY_OUT
+X_U1_U1_U2A         N00750 U1_N00126 U1_N00151 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U1_U1A         N00750 U1_N00126 SUM_X $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U2_U2A         N00372 N00384 U1_N00158 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U2_U1A         N00372 N00384 U1_N00126 $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U3A         U1_N00151 U1_N00158 N00183 $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2_U1_U2A         N00183 U2_N00126 U2_N00151 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2_U1_U1A         N00183 U2_N00126 SUM_Y $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2_U2_U2A         N00391 N00403 U2_N00158 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2_U2_U1A         N00391 N00403 U2_N00126 $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2_U3A         U2_N00151 U2_N00158 CARRY_OUT $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_X0         STIM(1,0) $G_DPWR $G_DGND N00372 IO_STM STIMULUS=X0
+U_Y0         STIM(1,0) $G_DPWR $G_DGND N00384 IO_STM STIMULUS=Y0
+U_X1         STIM(1,0) $G_DPWR $G_DGND N00391 IO_STM STIMULUS=X1
+U_Y1         STIM(1,0) $G_DPWR $G_DGND N00403 IO_STM STIMULUS=Y1
+U_Carry_in         STIM(1,0) $G_DPWR $G_DGND N00750 IO_STM STIMULUS=Carry_in
+
+**** RESUMING Two_Bit_Adder_Sim.cir ****
+.END
+
+* C:\Users\Diane\Desktop\2BitAdderTest.stl written on Tue Oct 10 16:07:47 2017
+* by Stimulus Editor -- Lite Version 17.2.0
+;!Stimulus Get
+;! X0 Digital Y0 Digital Carry_in Digital X1 Digital Y1 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 16ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Y0 STIM (1, 1) ;! CLOCK 1k 0.5 0 0
++   +0s 0
++   +500us 1
++   Repeat Forever
++      +500us 0
++      +500us 1
++   EndRepeat
+.STIMULUS X0 STIM (1, 1) ;! CLOCK 4k 0.5 0 0
++   +0s 0
++   +125us 1
++   Repeat Forever
++      +125us 0
++      +125us 1
++   EndRepeat
+.STIMULUS Carry_in STIM (1, 1) ;! CLOCK 250 0.5 0 0
++   +0s 0
++   +2ms 1
++   Repeat Forever
++      +2ms 0
++      +2ms 1
++   EndRepeat
+.STIMULUS X1 STIM (1, 1) ;! CLOCK 2k 0.5 0 0
++   +0s 0
++   +250us 1
++   Repeat Forever
++      +250us 0
++      +250us 1
++   EndRepeat
+.STIMULUS Y1 STIM (1, 1) ;! CLOCK 500 0.5 0 0
++   +0s 0
++   +1ms 1
++   Repeat Forever
++      +1ms 0
++      +1ms 1
++   EndRepeat
+
+**** 11/01/17 12:08:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Two_bit_Adder-Two_Bit_Adder_Sim"  [ C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder-pspicefiles\two_bit_adder\t
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_08            D_86_1          D_86_2          D_86_3          
+      TPLHMN    7.000000E-09    3.600000E-09    4.800000E-09    2.400000E-09 
+      TPLHTY   17.500000E-09    9.000000E-09   12.000000E-09    6.000000E-09 
+      TPLHMX   27.000000E-09   17.000000E-09   24.000000E-09    6.000000E-09 
+      TPHLMN    4.800000E-09    2.000000E-09    2.800000E-09    2.400000E-09 
+      TPHLTY   12.000000E-09    5.000000E-09    7.000000E-09    6.000000E-09 
+      TPHLMX   19.000000E-09   11.000000E-09   16.000000E-09    6.000000E-09 
+
+
+               D_32            D0_GATE         
+      TPLHMN    4.000000E-09    0            
+      TPLHTY   10.000000E-09    0            
+      TPLHMX   15.000000E-09    0            
+      TPHLMN    5.600000E-09    0            
+      TPHLTY   14.000000E-09    0            
+      TPHLMX   22.000000E-09    0            
+
+
+**** 11/01/17 12:08:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Two_bit_Adder-Two_Bit_Adder_Sim"  [ C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder-pspicefiles\two_bit_adder\t
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.511000E-09 
+      TSWHL2                    1.487000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.517000E-09 
+      TSWLH2                    3.564000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 11/01/17 12:08:13 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "Two_bit_Adder-Two_Bit_Adder_Sim"  [ C:\Users\student\Desktop\CSCI Labs\lab04_billings_adder-pspicefiles\two_bit_adder\t
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .06
+
