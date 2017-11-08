@@ -1,0 +1,129 @@
+
+**** 11/08/17 12:19:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "DFLIPFLOP-DFLIPFLOP_Test_Sim"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DFLIPFLOP
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DFLIPFLOP_Test_Sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../clear.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\DFLIPFLOP.net" 
+
+
+
+**** INCLUDING DFLIPFLOP.net ****
+* source LAB05_BILLINGS
+.EXTERNAL INPUT Reset
+.EXTERNAL INPUT D
+.EXTERNAL OUTPUT Q
+.EXTERNAL OUTPUT Qnot
+.EXTERNAL INPUT Clk
+X_U1A         N00661 N00411 N00381 $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1B         N00411 QNOT Q $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         N00381 N00560 N00545 N00411 $G_DPWR $G_DGND 7410 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2B         N00411 N00560 N00661 N00734 $G_DPWR $G_DGND 7410 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2C         Q N00734 N00545 QNOT $G_DPWR $G_DGND 7410 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         N00734 N00766 N00545 N00661 $G_DPWR $G_DGND 7410 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING DFLIPFLOP_Test_Sim.cir ****
+.END
+
+**** 11/08/17 12:19:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "DFLIPFLOP-DFLIPFLOP_Test_Sim"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DFLIPFLOP
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_00            D_10            
+      TPLHMN    4.400000E-09    4.400000E-09 
+      TPLHTY   11.000000E-09   11.000000E-09 
+      TPLHMX   22.000000E-09   22.000000E-09 
+      TPHLMN    2.800000E-09    2.800000E-09 
+      TPHLTY    7.000000E-09    7.000000E-09 
+      TPHLMX   15.000000E-09   15.000000E-09 
+
+
+**** 11/08/17 12:19:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "DFLIPFLOP-DFLIPFLOP_Test_Sim"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DFLIPFLOP
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STD          
+        DRVL  104            
+        DRVH   96.4          
+       AtoD1 AtoD_STD        
+       AtoD2 AtoD_STD_NX     
+       AtoD3 AtoD_STD        
+       AtoD4 AtoD_STD_NX     
+       DtoA1 DtoA_STD        
+       DtoA2 DtoA_STD        
+       DtoA3 DtoA_STD        
+       DtoA4 DtoA_STD        
+      TSWHL1    1.511000E-09 
+      TSWHL2    1.487000E-09 
+      TSWHL3    1.511000E-09 
+      TSWHL4    1.487000E-09 
+      TSWLH1    3.517000E-09 
+      TSWLH2    3.564000E-09 
+      TSWLH3    3.517000E-09 
+      TSWLH4    3.564000E-09 
+       TPWRT  100.000000E+03 
+
+
+
+          JOB CONCLUDED
+
+**** 11/08/17 12:19:17 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "DFLIPFLOP-DFLIPFLOP_Test_Sim"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DFLIPFLOP
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time                    =         .02
+

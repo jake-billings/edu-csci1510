@@ -1,0 +1,20 @@
+** Profile: "DFLIPFLOP_Test-DFLIPFLOP_Test_Sim_2"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DFLIPFLOP_Test\DFLIPFLOP_Test_Sim_2.sim ] 
+
+** Creating circuit file "DFLIPFLOP_Test_Sim_2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../clear.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\DFLIPFLOP_Test.net" 
+
+
+.END

@@ -1,0 +1,103 @@
+(ExpressProject "Lab05_Billings"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\lab05_billings.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "0")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\lab05_billings.olb"
+      (Type "Schematic Library"))
+    (File ".\lab05_billings-pspicefiles\dflipflop\dflipflop.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab05_billings-pspicefiles\dflipflop\dflipflop_test_sim.sim"
+        (DisplayName "DFLIPFLOP-DFLIPFLOP_Test_Sim")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\lab05_billings-pspicefiles\dflipflop_test\dflipflop_test_sim_2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab05_billings-pspicefiles\dflipflop_test\dflipflop_test_sim_2.sim"
+        (DisplayName "DFLIPFLOP_Test-DFLIPFLOP_Test_Sim_2")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User)
+      (File ".\clear.stl"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\clear.stl")))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (DigStim1
+      (FullPartName "DigStim1.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (DFLIPFLOP
+      (FullPartName "DFLIPFLOP.Normal")
+      (LibraryName
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB05_BILLINGS\LAB05_BILLINGS.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (7410
+      (FullPartName "7410.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (7400
+      (FullPartName "7400.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "1")))
+  (MPSSessionName "student")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\lab05_billings.dsn")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\lab05_billings.dsn"
+         "DFLIPFLOP_Test")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\lab05_billings.dsn"
+         "DFLIPFLOP")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\lab05_billings.dsn"
+         "DFLIPFLOP_Test"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 310"))
+      (Tab 0)))
+  (ISPCBBASICLICENSE "false"))

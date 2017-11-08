@@ -1,0 +1,144 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("DigStim1")
+        ("7410")
+        ("7400")
+    )
+    ("instances"
+        ("D"
+            ("device_name"	"DigStim1")
+            ("pspice_path"	"U_D")
+            ("level"	"0")
+            ("model_params"
+                ("IOMODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IOMODEL")
+                )
+                ("STIMTYPE"
+                    ("value"	"DIGITAL")
+                    ("pspice_param"	"STIMTYPE")
+                )
+            )
+        )
+        ("U4.U2C"
+            ("device_name"	"7410")
+            ("pspice_path"	"X_U4_U2C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U4.U1A"
+            ("device_name"	"7400")
+            ("pspice_path"	"X_U4_U1A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U4.U2A"
+            ("device_name"	"7410")
+            ("pspice_path"	"X_U4_U2A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U4.U3A"
+            ("device_name"	"7410")
+            ("pspice_path"	"X_U4_U3A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U4.U1B"
+            ("device_name"	"7400")
+            ("pspice_path"	"X_U4_U1B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U4.U2B"
+            ("device_name"	"7410")
+            ("pspice_path"	"X_U4_U2B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("RESET"
+            ("device_name"	"DigStim1")
+            ("pspice_path"	"U_RESET")
+            ("level"	"0")
+            ("model_params"
+                ("IOMODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IOMODEL")
+                )
+                ("STIMTYPE"
+                    ("value"	"DIGITAL")
+                    ("pspice_param"	"STIMTYPE")
+                )
+            )
+        )
+        ("Clk"
+            ("device_name"	"DigStim1")
+            ("pspice_path"	"U_Clk")
+            ("level"	"0")
+            ("model_params"
+                ("IOMODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IOMODEL")
+                )
+                ("STIMTYPE"
+                    ("value"	"DIGITAL")
+                    ("pspice_param"	"STIMTYPE")
+                )
+            )
+        )
+    )
+)

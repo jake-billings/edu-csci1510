@@ -1,0 +1,18 @@
+* C:\Users\Diane\Desktop\clear.stl written on Wed Oct 15 15:44:59 2014
+* by Stimulus Editor -- Lite Version 16.6.0
+;!Stimulus Get
+;! Clear_n Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 683.58260545us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Clear_n STIM (1, 1) ;! CLOCK 1 0.99999 0 0
++   +0s 0
++   +9.99999999995us 1
++   Repeat Forever
++      +0.99999s 0
++      +9.99999999995us 1
++   EndRepeat
