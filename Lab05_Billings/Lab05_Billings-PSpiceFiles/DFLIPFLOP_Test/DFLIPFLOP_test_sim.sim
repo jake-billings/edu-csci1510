@@ -2,12 +2,12 @@
 
 @Settings: 0 1
 @General:
-ProfileName= "DFLIPFLOP_Test_Sim" 
-ProfileFile= "DFLIPFLOP_Test_Sim.sim" 
-Connectivity= "DFLIPFLOP.net" 
-NetlistFile= "DFLIPFLOP_Test_Sim.cir" 
-DataFile= "DFLIPFLOP_Test_Sim.dat" 
-OutFile= "DFLIPFLOP_Test_Sim.out" 
+ProfileName= "DFLIPFLOP_test_sim" 
+ProfileFile= "DFLIPFLOP_test_sim.sim" 
+Connectivity= "DFLIPFLOP_test.net" 
+NetlistFile= "DFLIPFLOP_test_sim.cir" 
+DataFile= "c:\users\student\desktop\csci" 
+OutFile= "c:\users\student\desktop\csci" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES

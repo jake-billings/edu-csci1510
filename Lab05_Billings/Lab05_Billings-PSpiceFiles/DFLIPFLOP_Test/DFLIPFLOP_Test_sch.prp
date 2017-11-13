@@ -5,9 +5,9 @@
         ("7400")
     )
     ("instances"
-        ("D"
+        ("DSTM3"
             ("device_name"	"DigStim1")
-            ("pspice_path"	"U_D")
+            ("pspice_path"	"U_DSTM3")
             ("level"	"0")
             ("model_params"
                 ("IOMODEL"
@@ -20,99 +20,9 @@
                 )
             )
         )
-        ("U4.U2C"
-            ("device_name"	"7410")
-            ("pspice_path"	"X_U4_U2C")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("U4.U1A"
-            ("device_name"	"7400")
-            ("pspice_path"	"X_U4_U1A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("U4.U2A"
-            ("device_name"	"7410")
-            ("pspice_path"	"X_U4_U2A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("U4.U3A"
-            ("device_name"	"7410")
-            ("pspice_path"	"X_U4_U3A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("U4.U1B"
-            ("device_name"	"7400")
-            ("pspice_path"	"X_U4_U1B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("U4.U2B"
-            ("device_name"	"7410")
-            ("pspice_path"	"X_U4_U2B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("RESET"
+        ("DSTM1"
             ("device_name"	"DigStim1")
-            ("pspice_path"	"U_RESET")
+            ("pspice_path"	"U_DSTM1")
             ("level"	"0")
             ("model_params"
                 ("IOMODEL"
@@ -125,9 +35,99 @@
                 )
             )
         )
-        ("Clk"
+        ("U1.U2C"
+            ("device_name"	"7410")
+            ("pspice_path"	"X_U1_U2C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U1.U2A"
+            ("device_name"	"7410")
+            ("pspice_path"	"X_U1_U2A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U1.U1A"
+            ("device_name"	"7400")
+            ("pspice_path"	"X_U1_U1A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U1.U3A"
+            ("device_name"	"7410")
+            ("pspice_path"	"X_U1_U3A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U1.U1B"
+            ("device_name"	"7400")
+            ("pspice_path"	"X_U1_U1B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U1.U2B"
+            ("device_name"	"7410")
+            ("pspice_path"	"X_U1_U2B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("DSTM2"
             ("device_name"	"DigStim1")
-            ("pspice_path"	"U_Clk")
+            ("pspice_path"	"U_DSTM2")
             ("level"	"0")
             ("model_params"
                 ("IOMODEL"

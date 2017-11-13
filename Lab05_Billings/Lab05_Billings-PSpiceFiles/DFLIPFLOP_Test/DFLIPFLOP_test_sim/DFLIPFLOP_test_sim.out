@@ -1,7 +1,7 @@
 
-**** 11/13/17 11:08:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/13/17 11:24:14 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "DFLIPFLOP_Test-DFLIPFLOP_Test_Sim_2"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DF
+ ** Profile: "DFLIPFLOP_test-DFLIPFLOP_test_sim"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-pspicefiles\dfli
 
 
  ****     CIRCUIT DESCRIPTION
@@ -12,7 +12,7 @@
 
 
 
-** Creating circuit file "DFLIPFLOP_Test_Sim_2.cir" 
+** Creating circuit file "DFLIPFLOP_test_sim.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -26,35 +26,32 @@
 .TRAN  0 10ms 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
-.INC "..\DFLIPFLOP_Test.net" 
+.INC "..\DFLIPFLOP_test.net" 
 
 
 
-**** INCLUDING DFLIPFLOP_Test.net ****
+**** INCLUDING DFLIPFLOP_test.net ****
 * source LAB05_BILLINGS
-.EXTERNAL OUTPUT QNOT_out
-.EXTERNAL OUTPUT Q_out
-U_D         STIM(1,0) $G_DPWR $G_DGND N01514 IO_STM STIMULUS=D
-X_U4_U2C         Q_OUT U4_N00734 U4_N00545 QNOT_OUT $G_DPWR $G_DGND 7410
+.EXTERNAL OUTPUT Q
+.EXTERNAL OUTPUT Q_not
+U_DSTM3         STIM(1,0) $G_DPWR $G_DGND N00197 IO_STM STIMULUS=Clear_n
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N00173 IO_STM STIMULUS=Clock
+X_U1_U2C         Q U1_N00734 N00197 Q_NOT $G_DPWR $G_DGND 7410 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U2A         U1_N00381 N00173 N00197 U1_N00411 $G_DPWR $G_DGND 7410 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U1A         U1_N00661 U1_N00411 U1_N00381 $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U3A         U1_N00734 N00185 N00197 U1_N00661 $G_DPWR $G_DGND 7410 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U1B         U1_N00411 Q_NOT Q $G_DPWR $G_DGND 7400 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1_U2B         U1_N00411 N00173 U1_N00661 U1_N00734 $G_DPWR $G_DGND 7410
 +  PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U4_U1A         U4_N00661 U4_N00411 U4_N00381 $G_DPWR $G_DGND 7400 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-X_U4_U2A         U4_N00381 U4_N00560 U4_N00545 U4_N00411 $G_DPWR $G_DGND 7410
-+  PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-X_U4_U3A         U4_N00734 U4_N00766 U4_N00545 U4_N00661 $G_DPWR $G_DGND 7410
-+  PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-X_U4_U1B         U4_N00411 QNOT_OUT Q_OUT $G_DPWR $G_DGND 7400 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-X_U4_U2B         U4_N00411 U4_N00560 U4_N00661 U4_N00734 $G_DPWR $G_DGND 7410
-+  PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-U_RESET         STIM(1,0) $G_DPWR $G_DGND N01526 IO_STM STIMULUS=Clear_n
-U_Clk         STIM(1,0) $G_DPWR $G_DGND N01510 IO_STM STIMULUS=CLOCK
+U_DSTM2         STIM(1,0) $G_DPWR $G_DGND N00185 IO_STM STIMULUS=D
 
-**** RESUMING DFLIPFLOP_Test_Sim_2.cir ****
+**** RESUMING DFLIPFLOP_test_sim.cir ****
 .END
 
 * C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\clear.stl written on Mon Nov 13 11:08:05 2017
@@ -90,9 +87,9 @@ U_Clk         STIM(1,0) $G_DPWR $G_DGND N01510 IO_STM STIMULUS=CLOCK
 +      +91.97939661516us 1
 +   EndRepeat
 
-**** 11/13/17 11:08:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/13/17 11:24:14 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "DFLIPFLOP_Test-DFLIPFLOP_Test_Sim_2"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DF
+ ** Profile: "DFLIPFLOP_test-DFLIPFLOP_test_sim"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-pspicefiles\dfli
 
 
  ****     Digital Gate MODEL PARAMETERS
@@ -112,9 +109,9 @@ U_Clk         STIM(1,0) $G_DPWR $G_DGND N01510 IO_STM STIMULUS=CLOCK
       TPHLMX   15.000000E-09   15.000000E-09 
 
 
-**** 11/13/17 11:08:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/13/17 11:24:14 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "DFLIPFLOP_Test-DFLIPFLOP_Test_Sim_2"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DF
+ ** Profile: "DFLIPFLOP_test-DFLIPFLOP_test_sim"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-pspicefiles\dfli
 
 
  ****     Digital IO  MODEL PARAMETERS
@@ -150,9 +147,9 @@ U_Clk         STIM(1,0) $G_DPWR $G_DGND N01510 IO_STM STIMULUS=CLOCK
 
           JOB CONCLUDED
 
-**** 11/13/17 11:08:53 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/13/17 11:24:14 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
- ** Profile: "DFLIPFLOP_Test-DFLIPFLOP_Test_Sim_2"  [ C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\Lab05_Billings-PSpiceFiles\DF
+ ** Profile: "DFLIPFLOP_test-DFLIPFLOP_test_sim"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-pspicefiles\dfli
 
 
  ****     JOB STATISTICS SUMMARY
@@ -162,5 +159,5 @@ U_Clk         STIM(1,0) $G_DPWR $G_DGND N01510 IO_STM STIMULUS=CLOCK
 
 
 
-  Total job time                    =         .08
+  Total job time                    =         .03
 

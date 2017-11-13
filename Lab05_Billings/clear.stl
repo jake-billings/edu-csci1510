@@ -1,10 +1,10 @@
-* C:\Users\Diane\Desktop\clear.stl written on Wed Oct 15 15:44:59 2014
-* by Stimulus Editor -- Lite Version 16.6.0
+* C:\Users\student\Desktop\CSCI Labs\Lab05_Billings\clear.stl written on Mon Nov 13 11:08:05 2017
+* by Stimulus Editor -- Lite Version 17.2.0
 ;!Stimulus Get
-;! Clear_n Digital
+;! Clear_n Digital D Digital CLOCK Digital
 ;!Ok
 ;!Plot Axis_Settings
-;!Xrange 0s 683.58260545us
+;!Xrange 0s 1.887149380503ms
 ;!AutoUniverse
 ;!XminRes 1ns
 ;!YminRes 1n
@@ -15,4 +15,18 @@
 +   Repeat Forever
 +      +0.99999s 0
 +      +9.99999999995us 1
++   EndRepeat
+.STIMULUS D STIM (1, 1) ;! CLOCK 1000 0.5 0 0
++   +0s 0
++   +500us 1
++   Repeat Forever
++      +500us 0
++      +500us 1
++   EndRepeat
+.STIMULUS CLOCK STIM (1, 1) ;! CLOCK 5436 0.5 0 0
++   +0s 0
++   +91.97939661516us 1
++   Repeat Forever
++      +91.97939661516us 0
++      +91.97939661516us 1
 +   EndRepeat
