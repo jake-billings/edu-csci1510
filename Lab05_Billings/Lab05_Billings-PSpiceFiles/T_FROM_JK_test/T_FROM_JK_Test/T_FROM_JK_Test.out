@@ -1,5 +1,5 @@
-
-**** 11/13/17 11:58:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+**** 11/13/17 12:10:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "T_FROM_JK_test-T_FROM_JK_Test"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-PSpiceFiles\T_FROM_J
 
@@ -34,10 +34,10 @@
 * source LAB05_BILLINGS
 .EXTERNAL OUTPUT Q
 .EXTERNAL OUTPUT QNOT
-U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N00732 IO_STM STIMULUS=Clock
-U_DSTM2         STIM(1,0) $G_DPWR $G_DGND N00796 IO_STM STIMULUS=D
-U_DSTM3         STIM(1,0) $G_DPWR $G_DGND N00822 IO_STM STIMULUS=Clear_n
-X_U1_U1A         N00732 N00796 N00822 N00822 Q QNOT $G_DPWR $G_DGND 74107
+U_Clock         STIM(1,0) $G_DPWR $G_DGND N00732 IO_STM STIMULUS=Clock
+U_T         STIM(1,0) $G_DPWR $G_DGND N00796 IO_STM STIMULUS=D
+U_Reset         STIM(1,0) $G_DPWR $G_DGND N00848 IO_STM STIMULUS=Clear_n
+X_U1_U1A         N00732 N00848 N00796 N00796 Q QNOT $G_DPWR $G_DGND 74107
 +  PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 
@@ -77,7 +77,7 @@ X_U1_U1A         N00732 N00796 N00822 N00822 Q QNOT $G_DPWR $G_DGND 74107
 +      +91.97939661516us 1
 +   EndRepeat
 
-**** 11/13/17 11:58:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/13/17 12:10:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "T_FROM_JK_test-T_FROM_JK_Test"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-PSpiceFiles\T_FROM_J
 
@@ -99,7 +99,7 @@ X_U1_U1A         N00732 N00796 N00822 N00822 Q QNOT $G_DPWR $G_DGND 74107
       TPHLMX    0               0               6.000000E-09 
 
 
-**** 11/13/17 11:58:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/13/17 12:10:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "T_FROM_JK_test-T_FROM_JK_Test"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-PSpiceFiles\T_FROM_J
 
@@ -151,7 +151,7 @@ X_U1_U1A         N00732 N00796 N00822 N00822 Q QNOT $G_DPWR $G_DGND 74107
    THCECLKMX    0               0            
 
 
-**** 11/13/17 11:58:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/13/17 12:10:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "T_FROM_JK_test-T_FROM_JK_Test"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-PSpiceFiles\T_FROM_J
 
@@ -189,7 +189,7 @@ X_U1_U1A         N00732 N00796 N00822 N00822 Q QNOT $G_DPWR $G_DGND 74107
 
           JOB CONCLUDED
 
-**** 11/13/17 11:58:27 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 11/13/17 12:10:48 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "T_FROM_JK_test-T_FROM_JK_Test"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-PSpiceFiles\T_FROM_J
 

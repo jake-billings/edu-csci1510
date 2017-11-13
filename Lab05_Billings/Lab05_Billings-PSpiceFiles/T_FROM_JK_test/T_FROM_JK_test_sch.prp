@@ -4,9 +4,9 @@
         ("74107")
     )
     ("instances"
-        ("DSTM1"
+        ("Clock"
             ("device_name"	"DigStim1")
-            ("pspice_path"	"U_DSTM1")
+            ("pspice_path"	"U_Clock")
             ("level"	"0")
             ("model_params"
                 ("STIMTYPE"
@@ -19,9 +19,9 @@
                 )
             )
         )
-        ("DSTM2"
+        ("T"
             ("device_name"	"DigStim1")
-            ("pspice_path"	"U_DSTM2")
+            ("pspice_path"	"U_T")
             ("level"	"0")
             ("model_params"
                 ("STIMTYPE"
@@ -34,9 +34,9 @@
                 )
             )
         )
-        ("DSTM3"
+        ("Reset"
             ("device_name"	"DigStim1")
-            ("pspice_path"	"U_DSTM3")
+            ("pspice_path"	"U_Reset")
             ("level"	"0")
             ("model_params"
                 ("STIMTYPE"
