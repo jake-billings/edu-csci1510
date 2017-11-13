@@ -1,0 +1,20 @@
+** Profile: "T_FROM_JK_test-T_FROM_JK_Test"  [ c:\users\student\desktop\csci labs\lab05_billings\lab05_billings-PSpiceFiles\T_FROM_JK_test\T_FROM_JK_Test.sim ] 
+
+** Creating circuit file "T_FROM_JK_Test.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../clear.stl" 
+* From [PSPICE NETLIST] section of C:\Users\student\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\T_FROM_JK_test.net" 
+
+
+.END

@@ -32,6 +32,10 @@
     (File ".\lab05_billings-pspicefiles\dflipflop_test\dflipflop_test.net"
       (Type "Report"))
     (File ".\lab05_billings1.olb"
+      (Type "Schematic Library"))
+    (File ".\lab05_billings-pspicefiles\d_from_jk_test\d_from_jk_test.net"
+      (Type "Report"))
+    (File ".\lab05_billings.olb"
       (Type "Schematic Library")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -39,25 +43,41 @@
          ".\lab05_billings-pspicefiles\dflipflop\dflipflop_test_sim.sim"
         (DisplayName "DFLIPFLOP-DFLIPFLOP_Test_Sim")
         (Type "PSpice Profile"))
-      (ActiveProfile
-         ".\lab05_billings-pspicefiles\dflipflop_test\dflipflop_test_sim.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\lab05_billings-pspicefiles\dflipflop_test\dflipflop_test_sim.sim"
         (DisplayName "DFLIPFLOP_test-DFLIPFLOP_test_sim")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lab05_billings-pspicefiles\d_from_jk_test\d_from_jk_test_som.sim"
+        (DisplayName "D_FROM_JK_test-D_FROM_JK_test_som")
         (Type "PSpice Profile")))
-    (Folder "Model Libraries"
-      (Sort User))
+    (Folder "Model Libraries")
+    (Folder "Include Files")
     (Folder "Stimulus Files"
-      (Sort User)
       (File ".\clear.stl"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\clear.stl")))
-    (Folder "Include Files"
+        (DisplayName ".\clear.stl")
+        (Type "PSpiceLibrary"))
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
     (PORTLEFT-L
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (74107
+      (FullPartName "74107.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (D_FROM_JK
+      (FullPartName "D_FROM_JK.Normal")
+      (LibraryName
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB05_BILLINGS\LAB05_BILLINGS.OLB")
+      (DeviceIndex "0"))
+    (7404
+      (FullPartName "7404.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
       (DeviceIndex "0"))
     (DigStim1
       (FullPartName "DigStim1.Normal")
@@ -68,9 +88,6 @@
       (FullPartName "DFLIPFLOP.Normal")
       (LibraryName
          "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB05_BILLINGS\LAB05_BILLINGS.OLB")
-      (DeviceIndex "0"))
-    (PORTRIGHT-R
-      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (PORTRIGHT-L
       (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
@@ -91,39 +108,21 @@
          "c:\users\student\desktop\csci labs\lab05_billings\lab05_billings.dsn")
       (Path "Design Resources"
          "c:\users\student\desktop\csci labs\lab05_billings\lab05_billings.dsn"
-         "DFLIPFLOP_test")
+         "T_FROM_JK_test")
       (Path "Design Resources"
          "c:\users\student\desktop\csci labs\lab05_billings\lab05_billings.dsn"
-         "DFLIPFLOP")
+         "T_FROM_JK")
+      (Path "Design Resources"
+         "c:\users\student\desktop\csci labs\lab05_billings\lab05_billings.dsn"
+         "Design Cache")
       (Path "Outputs")
       (Select "Design Resources"
          "c:\users\student\desktop\csci labs\lab05_billings\lab05_billings.dsn"
-         "DFLIPFLOP" "DFLIPFLOP"))
+         "T_FROM_JK_test"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -31 0 200 0 310"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 130 1520 130 488")
-        (Scroll "-186 48")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB05_BILLINGS\LAB05_BILLINGS.DSN")
-      (Schematic "DFLIPFLOP_test")
-      (Page "DFLIPFLOP_test"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 1762 78 436")
-        (Scroll "-333 238")
-        (Zoom "100"))
-      (Path
-         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB05_BILLINGS\LAB05_BILLINGS.DSN")
-      (Schematic "DFLIPFLOP")
-      (Page "DFLIPFLOP")))
+      (Tab 0)))
   (ISPCBBASICLICENSE "false"))
