@@ -1,0 +1,68 @@
+(ExpressProject "Lab06a_Billings"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\lab06a_billings.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles")
+    (Folder "Model Libraries")
+    (Folder "Include Files")
+    (Folder "Stimulus Files"
+      (File ".\lab06a_billings_multiplexer_test_stim.stl"
+        (DisplayName ".\lab06a_billings_multiplexer_test_stim.stl")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (DigStim1
+      (FullPartName "DigStim1.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (4_1_Multiplexer_Billings
+      (FullPartName "4_1_Multiplexer_Billings.Normal")
+      (LibraryName
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB06A_BILLINGS\LAB06A_BILLINGS.OLB")
+      (DeviceIndex "0"))
+    (7400
+      (FullPartName "7400.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "1"))
+    (7420
+      (FullPartName "7420.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "student")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\lab06a_billings.dsn")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\lab06a_billings.dsn"
+         "4_1_Multiplexer_Test_Billings")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\lab06a_billings.dsn"
+         "4_1_Multiplexer_Billings")
+      (Select "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\lab06a_billings.dsn"
+         "4_1_Multiplexer_Test_Billings"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 319"))
+      (Tab 0))))
