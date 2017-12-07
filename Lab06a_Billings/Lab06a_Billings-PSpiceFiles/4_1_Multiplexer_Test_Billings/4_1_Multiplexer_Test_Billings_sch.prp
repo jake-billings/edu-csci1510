@@ -80,6 +80,36 @@
                 )
             )
         )
+        ("S0"
+            ("device_name"	"DigStim1")
+            ("pspice_path"	"U_S0")
+            ("level"	"0")
+            ("model_params"
+                ("STIMTYPE"
+                    ("value"	"DIGITAL")
+                    ("pspice_param"	"STIMTYPE")
+                )
+                ("IOMODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IOMODEL")
+                )
+            )
+        )
+        ("I1"
+            ("device_name"	"DigStim1")
+            ("pspice_path"	"U_I1")
+            ("level"	"0")
+            ("model_params"
+                ("STIMTYPE"
+                    ("value"	"DIGITAL")
+                    ("pspice_param"	"STIMTYPE")
+                )
+                ("IOMODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IOMODEL")
+                )
+            )
+        )
         ("U1.U11B"
             ("device_name"	"7420")
             ("pspice_path"	"X_U1_U11B")
@@ -182,36 +212,6 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("S0"
-            ("device_name"	"DigStim1")
-            ("pspice_path"	"U_S0")
-            ("level"	"0")
-            ("model_params"
-                ("STIMTYPE"
-                    ("value"	"DIGITAL")
-                    ("pspice_param"	"STIMTYPE")
-                )
-                ("IOMODEL"
-                    ("value"	"IO_STM")
-                    ("pspice_param"	"IOMODEL")
-                )
-            )
-        )
-        ("I1"
-            ("device_name"	"DigStim1")
-            ("pspice_path"	"U_I1")
-            ("level"	"0")
-            ("model_params"
-                ("STIMTYPE"
-                    ("value"	"DIGITAL")
-                    ("pspice_param"	"STIMTYPE")
-                )
-                ("IOMODEL"
-                    ("value"	"IO_STM")
-                    ("pspice_param"	"IOMODEL")
                 )
             )
         )

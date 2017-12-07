@@ -1,5 +1,5 @@
-
-**** 11/29/17 12:17:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+**** 12/07/17 16:49:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "4_1_Multiplexer_Test_Billings-Multiplexer_Test_Sim_Billings"  [ C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\Lab0
 
@@ -38,27 +38,27 @@ U_E         STIM(1,0) $G_DPWR $G_DGND N00327 IO_STM STIMULUS=E
 U_I3         STIM(1,0) $G_DPWR $G_DGND N00367 IO_STM STIMULUS=I3
 U_S1         STIM(1,0) $G_DPWR $G_DGND N00425 IO_STM STIMULUS=S1
 U_I0         STIM(1,0) $G_DPWR $G_DGND N00339 IO_STM STIMULUS=I0
-X_U1_U11B         U1_N02515 U1_N02204 N00327 N00367 U1_N06742 $G_DPWR $G_DGND
+U_S0         STIM(1,0) $G_DPWR $G_DGND N00379 IO_STM STIMULUS=S0
+U_I1         STIM(1,0) $G_DPWR $G_DGND N00351 IO_STM STIMULUS=I1
+X_U1_U11B         U1_N02515 U1_N02204 N00327 N00339 U1_N06742 $G_DPWR $G_DGND
 +  7420 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U1_U10B         N00425 U1_N02204 N00327 N00351 U1_N03154 $G_DPWR $G_DGND 7420
+X_U1_U10B         N00425 U1_N02204 N00327 N00355 U1_N07555 $G_DPWR $G_DGND 7420
 +  PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U1_U3B         N00379 N00379 U1_N02204 $G_DPWR $G_DGND 7400 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U1_U11A         U1_N02515 N00379 N00327 N00355 U1_N03169 $G_DPWR $G_DGND 7420
+X_U1_U11A         U1_N02515 N00379 N00327 N00351 U1_N03169 $G_DPWR $G_DGND 7420
 +  PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U1_U10A         N00425 N00379 N00327 N00339 U1_N03154 $G_DPWR $G_DGND 7420
+X_U1_U10A         N00425 N00379 N00327 N00367 U1_N06730 $G_DPWR $G_DGND 7420
 +  PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U1_U8A         U1_N03154 U1_N03154 U1_N03169 U1_N06742 PORTLEFT-L $G_DPWR
+X_U1_U8A         U1_N06730 U1_N07555 U1_N03169 U1_N06742 PORTLEFT-L $G_DPWR
 +  $G_DGND 7420 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U1_U4B         N00425 N00425 U1_N02515 $G_DPWR $G_DGND 7400 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-U_S0         STIM(1,0) $G_DPWR $G_DGND N00379 IO_STM STIMULUS=S0
-U_I1         STIM(1,0) $G_DPWR $G_DGND N00351 IO_STM STIMULUS=I1
 
 **** RESUMING Multiplexer_Test_Sim_Billings.cir ****
 .END
@@ -93,19 +93,19 @@ U_I1         STIM(1,0) $G_DPWR $G_DGND N00351 IO_STM STIMULUS=I1
 +      +250us 0
 +      +250us 1
 +   EndRepeat
-.STIMULUS S1 STIM (1, 1) ;! CLOCK 500 0.5 0 0
-+   +0s 0
-+   +1ms 1
-+   Repeat Forever
-+      +1ms 0
-+      +1ms 1
-+   EndRepeat
-.STIMULUS S0 STIM (1, 1) ;! CLOCK 250 0.5 0 0
+.STIMULUS S1 STIM (1, 1) ;! CLOCK 250 0.5 0 0
 +   +0s 0
 +   +2ms 1
 +   Repeat Forever
 +      +2ms 0
 +      +2ms 1
++   EndRepeat
+.STIMULUS S0 STIM (1, 1) ;! CLOCK 500 0.5 0 0
++   +0s 0
++   +1ms 1
++   Repeat Forever
++      +1ms 0
++      +1ms 1
 +   EndRepeat
 .STIMULUS E STIM (1, 1) ;! CLOCK 125 0.5 0 0
 +   +0s 0
@@ -115,7 +115,7 @@ U_I1         STIM(1,0) $G_DPWR $G_DGND N00351 IO_STM STIMULUS=I1
 +      +4ms 1
 +   EndRepeat
 
-**** 11/29/17 12:17:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/07/17 16:49:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "4_1_Multiplexer_Test_Billings-Multiplexer_Test_Sim_Billings"  [ C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\Lab0
 
@@ -137,7 +137,7 @@ U_I1         STIM(1,0) $G_DPWR $G_DGND N00351 IO_STM STIMULUS=I1
       TPHLMX   15.000000E-09   15.000000E-09 
 
 
-**** 11/29/17 12:17:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/07/17 16:49:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "4_1_Multiplexer_Test_Billings-Multiplexer_Test_Sim_Billings"  [ C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\Lab0
 
@@ -175,7 +175,7 @@ U_I1         STIM(1,0) $G_DPWR $G_DGND N00351 IO_STM STIMULUS=I1
 
           JOB CONCLUDED
 
-**** 11/29/17 12:17:06 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+**** 12/07/17 16:49:03 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
 
  ** Profile: "4_1_Multiplexer_Test_Billings-Multiplexer_Test_Sim_Billings"  [ C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\Lab0
 
@@ -187,5 +187,5 @@ U_I1         STIM(1,0) $G_DPWR $G_DGND N00351 IO_STM STIMULUS=I1
 
 
 
-  Total job time                    =         .06
+  Total job time                    =         .05
 

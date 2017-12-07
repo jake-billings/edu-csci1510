@@ -1,4 +1,4 @@
-* C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\Lab06a_Billings_Multiplexer_Test_Stim.stl written on Wed Nov 29 12:15:53 2017
+* C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\Lab06a_Billings_Multiplexer_Test_Stim.stl written on Thu Dec 07 16:48:54 2017
 * by Stimulus Editor -- Lite Version 17.2.0
 ;!Stimulus Get
 ;! E Digital S0 Digital S1 Digital I0 Digital I1 Digital I2 Digital I3 Digital
@@ -37,19 +37,19 @@
 +      +250us 0
 +      +250us 1
 +   EndRepeat
-.STIMULUS S1 STIM (1, 1) ;! CLOCK 500 0.5 0 0
-+   +0s 0
-+   +1ms 1
-+   Repeat Forever
-+      +1ms 0
-+      +1ms 1
-+   EndRepeat
-.STIMULUS S0 STIM (1, 1) ;! CLOCK 250 0.5 0 0
+.STIMULUS S1 STIM (1, 1) ;! CLOCK 250 0.5 0 0
 +   +0s 0
 +   +2ms 1
 +   Repeat Forever
 +      +2ms 0
 +      +2ms 1
++   EndRepeat
+.STIMULUS S0 STIM (1, 1) ;! CLOCK 500 0.5 0 0
++   +0s 0
++   +1ms 1
++   Repeat Forever
++      +1ms 0
++      +1ms 1
 +   EndRepeat
 .STIMULUS E STIM (1, 1) ;! CLOCK 125 0.5 0 0
 +   +0s 0
