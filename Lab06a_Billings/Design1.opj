@@ -1,0 +1,148 @@
+(ExpressProject "Design1"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\design1.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "TRUE")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "TRUE")
+    (ANNOTATE_PreserveDesignator "FALSE")
+    (ANNOTATE_PreserveUserEdits "FALSE")
+    (ANNOTATE_Refdes_Control_Required "FALSE")
+    (Update_Instace_for_External_Design "FALSE")
+    (Annotate_type "Default")
+    (width_pages "100")
+    (width_start "80")
+    (width_End "80"))
+  (Folder "Outputs"
+    (File ".\design1-pspicefiles\multiplexer_test\multiplexer_test.net"
+      (Type "Report"))
+    (File ".\design1-pspicefiles\tmultiplexer_test\tmultiplexer_test.net"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (MULTIPLEXER
+      (FullPartName "MULTIPLEXER.Normal")
+      (LibraryName
+         "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB06A_BILLINGS\DESIGN1.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-R
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (DigStim1
+      (FullPartName "DigStim1.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (7400
+      (FullPartName "7400.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "1"))
+    (7420
+      (FullPartName "7420.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (7404
+      (FullPartName "7404.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (74107
+      (FullPartName "74107.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.2\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0")))
+  (MPSSessionName "student")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\design1.dsn")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\design1.dsn"
+         "tMULTIPLEXER_TEST")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\design1.dsn"
+         "3_BIT_REGISTER")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\design1.dsn"
+         "3_BIT_UNIVERSAL_SHIFT")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\design1.dsn"
+         "DFROMJK")
+      (Path "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\design1.dsn"
+         "MULTIPLEXER")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\student\Desktop\CSCI Labs\Lab06a_Billings\design1.dsn"
+         "3_BIT_UNIVERSAL_SHIFT"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 62 388 33 444"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 562 182 632")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB06A_BILLINGS\DESIGN1.DSN")
+      (Schematic "tMULTIPLEXER_TEST")
+      (Page "Multiplexer_Test"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1550 208 667")
+        (Scroll "-162 0")
+        (Zoom "100"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1766 130 589")
+        (Scroll "-309 0")
+        (Zoom "100")
+        (Occurrence "/U1"))
+      (Path "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB06A_BILLINGS\DESIGN1.DSN")
+      (Schematic "MULTIPLEXER")
+      (Page "Multiplexer"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 208 1550 208 667")
+        (Scroll "-162 85")
+        (Zoom "100"))
+      (Path "C:\USERS\STUDENT\DESKTOP\CSCI LABS\LAB06A_BILLINGS\DESIGN1.DSN")
+      (Schematic "3_BIT_REGISTER")
+      (Page "3_BIT_REGISTER")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\design1-pspicefiles\tmultiplexer_test\multiplexersim.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\design1-pspicefiles\tmultiplexer_test\multiplexersim.sim"
+        (DisplayName "tMULTIPLEXER_TEST-MultiplexerSim")
+        (Type "PSpice Profile")))))
